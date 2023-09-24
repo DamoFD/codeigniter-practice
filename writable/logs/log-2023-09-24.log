@@ -1,0 +1,28 @@
+CRITICAL - 2023-09-24 21:32:01 --> Too few arguments to function App\Controllers\Shop::product(), 0 passed in /app/myapp/system/CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 22:15:25 --> Undefined variable $data
+in APPPATH/Views/header.php on line 6.
+ 1 APPPATH/Views/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/header.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Blog.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 22:16:45 --> Undefined variable $meta_title
+in APPPATH/Views/header.php on line 6.
+ 1 APPPATH/Views/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/header.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Blog.php(20): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->post()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
