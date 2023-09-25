@@ -45,4 +45,12 @@ class Posts extends BaseController
         $result = $model->like();
         dd($result);
     }
+
+    public function wherein(): string
+    {
+        $db = db_connect();
+        $model = new CustomModel($db);
+        $result = $model->wherein();
+        dd($result);
+    }
 }

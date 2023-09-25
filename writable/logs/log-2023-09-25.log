@@ -138,3 +138,25 @@ in APPPATH/Models/CustomModel.php on line 30.
  3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 04:24:35 --> mysqli_sql_exception: Unknown column 'user_email' in 'where clause' in /app/myapp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/app/Models/CustomModel.php(77): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/app/Controllers/Posts.php(53): App\Models\CustomModel->wherein()
+#6 /app/myapp/system/CodeIgniter.php(919): App\Controllers\Posts->wherein()
+#7 /app/myapp/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-25 04:24:35 --> Unknown column 'user_email' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CustomModel.php(77): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Posts.php(53): App\Models\CustomModel->wherein()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Posts->wherein()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
