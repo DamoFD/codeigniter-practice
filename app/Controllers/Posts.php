@@ -21,4 +21,12 @@ class Posts extends BaseController
         $result = $model->where();
         dd($result);
     }
+
+    public function join(): string
+    {
+        $db = db_connect();
+        $model = new CustomModel($db);
+        $result = $model->join();
+        dd($result);
+    }
 }

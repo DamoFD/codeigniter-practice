@@ -131,3 +131,10 @@ in SYSTEMPATH/Database/BaseConnection.php on line 646.
  5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 04:00:05 --> App\Models\CustomModel::where(): Return value must be of type array, stdClass returned
+in APPPATH/Models/CustomModel.php on line 30.
+ 1 APPPATH/Controllers/Posts.php(21): App\Models\CustomModel->where()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Posts->where()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

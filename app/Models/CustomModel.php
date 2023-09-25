@@ -25,7 +25,19 @@ class CustomModel
         //"SELECT * FROM posts"
 
         return $this->db->table('posts')
-            ->where(['post_id' => 4])
+            ->where(['post_id >' => 3])
+            ->where(['post_id <' => 6])
+            ->orderBy('post_id', 'DESC')
+            ->get()
+            ->getResult();
+    }
+
+    public function join(): array
+    {
+        return $this->db->table('posts')
+            ->where('post_id >', 3)
+            ->where('post_id <', 6)
+            ->join('users', 'posts.post_author = users.user_id')
             ->get()
             ->getResult();
     }
