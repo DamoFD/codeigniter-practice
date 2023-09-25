@@ -19,3 +19,67 @@ in APPPATH/Controllers/Blog.php on line 28.
 CRITICAL - 2023-09-25 01:48:40 --> A void function must not return a value
 in APPPATH/Controllers/Blog.php on line 63.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-25 02:55:36 --> Undefined array key "title"
+in APPPATH/Views/edit_post.php on line 11.
+ 1 APPPATH/Views/edit_post.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/edit_post.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Blog.php(84): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:56:21 --> Undefined array key "title"
+in APPPATH/Views/edit_post.php on line 11.
+ 1 APPPATH/Views/edit_post.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/edit_post.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Blog.php(84): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:30:08 --> Typed property App\Models\CustomModel::$db must not be accessed before initialization
+in APPPATH/Models/CustomModel.php on line 18.
+ 1 APPPATH/Controllers/Blog.php(14): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:30:48 --> Typed property App\Models\CustomModel::$db must not be accessed before initialization
+in APPPATH/Models/CustomModel.php on line 18.
+ 1 APPPATH/Controllers/Blog.php(15): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:31:00 --> Typed property App\Models\CustomModel::$db must not be accessed before initialization
+in APPPATH/Models/CustomModel.php on line 18.
+ 1 APPPATH/Controllers/Blog.php(15): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:31:09 --> Typed property App\Models\CustomModel::$db must not be accessed before initialization
+in APPPATH/Models/CustomModel.php on line 18.
+ 1 APPPATH/Controllers/Blog.php(15): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:33:52 --> App\Models\CustomModel::getPosts(): Return value must be of type array, CodeIgniter\Database\MySQLi\Result returned
+in APPPATH/Models/CustomModel.php on line 21.
+ 1 APPPATH/Controllers/Blog.php(15): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:37:19 --> App\Models\CustomModel::getPosts(): Return value must be of type CodeIgniter\Database\MySQLi\Result, array returned
+in APPPATH/Models/CustomModel.php on line 22.
+ 1 APPPATH/Controllers/Blog.php(16): App\Models\CustomModel->getPosts()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
