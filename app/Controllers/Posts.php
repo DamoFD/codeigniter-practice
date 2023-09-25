@@ -29,4 +29,20 @@ class Posts extends BaseController
         $result = $model->join();
         dd($result);
     }
+
+    public function like(): string
+    {
+        $db = db_connect();
+        $model = new CustomModel($db);
+        $result = $model->like();
+        dd($result);
+    }
+
+    public function grouping(): string
+    {
+        $db = db_connect();
+        $model = new CustomModel($db);
+        $result = $model->like();
+        dd($result);
+    }
 }

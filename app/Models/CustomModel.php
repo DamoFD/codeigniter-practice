@@ -42,6 +42,28 @@ class CustomModel
             ->getResult();
     }
 
+    public function like(): array
+    {
+        return $this->db->table('posts')
+            ->like('post_title', 'te', 'both')
+            ->join('users', 'posts.post_author = users.user_id')
+            ->get()
+            ->getResult();
+    }
+
+    public function grouping(): array
+    {
+        // SELECT * FROM posts WHERE (post_id = 25 AND post_date < '1990-01-01 00:00:00') OR post_author = 10;
+        return $this->db->table('posts')
+            ->groupStart()
+            ->where(['post_id' => '3', 'post_created_at <' => '2024-01-01 00:00:00'])
+            ->groupEnd()
+            ->orWhere('post_author', 1)
+            ->join('users', 'posts.post_author = users.user_id')
+            ->get()
+            ->getResult();
+    }
+
     public function getPosts(): array
     {
         $builder = $this->db->table('posts');
