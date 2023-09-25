@@ -17,7 +17,7 @@
             <form method="post">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input name="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input value="<?= set_value('email') ?>" name="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
@@ -29,10 +29,19 @@
                     <select name="category" class="form-control">
                         <option value=""></option>
                         <?php foreach ($categories as $category) : ?>
-                            <option value="<?=$category?>"><?=$category?></option>
+                        <option <?= set_select('category', $category) ?> value="<?=$category?>"><?=$category?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
+
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input name="date" value="<?= set_value('date') ?>" type="date" class="form-control" id="date">
+                </div>
+                <?php
+                    print_r($_POST);
+                ?>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

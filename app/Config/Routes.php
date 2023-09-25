@@ -24,6 +24,7 @@ $routes->get('posts/grouping', 'Posts::grouping');
 $routes->get('posts/wherein', 'Posts::wherein');
 $routes->get('form', 'Form::index');
 $routes->post('form', 'Form::index');
+$routes->get('form/success', 'Form::success');
 
 $routes->group('admin', function ($routes){
     $routes->add('user', 'Admin\Users::index');

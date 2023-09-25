@@ -182,3 +182,20 @@ in APPPATH/Views/form.php on line 14.
  7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:35:34 --> Undefined variable $cat
+in APPPATH/Views/form.php on line 32.
+ 1 APPPATH/Views/form.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/form.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Form.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:38:25 --> App\Controllers\Form::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Form.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Form->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
