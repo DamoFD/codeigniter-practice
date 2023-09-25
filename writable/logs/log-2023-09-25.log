@@ -9,3 +9,13 @@ in APPPATH/Views/blog.php on line 4.
  7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 01:40:24 --> Undefined array key "title"
+in APPPATH/Controllers/Blog.php on line 28.
+ 1 APPPATH/Controllers/Blog.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Blog->post()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 01:48:40 --> A void function must not return a value
+in APPPATH/Controllers/Blog.php on line 63.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

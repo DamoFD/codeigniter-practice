@@ -5,7 +5,7 @@
 
 <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
-        <form action="/blog/new">
+        <form action="/blog/new" method="post">
             <div class="form-group">
                 <label for="">Title</label>
                 <input class="form-control" type="text" name="post_title">

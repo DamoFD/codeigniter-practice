@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\BlogModel;
+use Codeigniter\Http\RedirectResponse;
+
 class Blog extends BaseController
 {
     public function index(): string
@@ -17,12 +20,23 @@ class Blog extends BaseController
         return view('blog', $data);
     }
 
-    public function post(): string
+    public function post(int $id): string
     {
-        $data = [
-            'meta_title' => 'Codeigniter 4 Post Page',
-            'title' => 'This is an awesome blog',
-        ];
+        $model = new BlogModel();
+        $post = $model->find($id);
+        if ($post) {
+            $data = [
+                'meta_title' => $post['post_title'],
+                'title' => $post['post_title'],
+                'post' => $post,
+            ];
+        } else {
+            $data = [
+                'meta_title' => 'Post Not Found',
+                'title' => 'Post Not Found',
+                'content' => 'Post Not Found',
+            ];
+        }
 
         return view('single_post', $data);
     }
@@ -33,6 +47,22 @@ class Blog extends BaseController
             'meta_title' => 'New Post',
             'title' => 'Create new post',
         ];
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $model = new BlogModel();
+            $model->save($_POST);
+        }
         return view('new_post', $data);
+    }
+
+    public function delete($id): string | RedirectResponse
+    {
+        $model = new BlogModel();
+        $post = $model->find($id);
+        if ($post) {
+            $model->delete($id);
+            return redirect()->to('/blog');
+        }
+        return redirect()->back();
     }
 }
