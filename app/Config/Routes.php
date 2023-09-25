@@ -22,6 +22,8 @@ $routes->get('posts/join', 'Posts::join');
 $routes->get('posts/like', 'Posts::like');
 $routes->get('posts/grouping', 'Posts::grouping');
 $routes->get('posts/wherein', 'Posts::wherein');
+$routes->get('form', 'Form::index');
+$routes->post('form', 'Form::index');
 
 $routes->group('admin', function ($routes){
     $routes->add('user', 'Admin\Users::index');

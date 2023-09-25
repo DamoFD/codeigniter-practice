@@ -160,3 +160,25 @@ in SYSTEMPATH/Database/BaseConnection.php on line 646.
  5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:16:27 --> Undefined variable $cateogry
+in APPPATH/Views/form.php on line 27.
+ 1 APPPATH/Views/form.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/form.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Form.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:26:56 --> Undefined variable $validator
+in APPPATH/Views/form.php on line 14.
+ 1 APPPATH/Views/form.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/app/myapp/app/Views/form.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Form.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
