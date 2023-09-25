@@ -11,6 +11,7 @@ $routes->get('/shop/product/(:segment)', 'Shop::product/$1');
 $routes->add('product/(:any)', 'Shop::product/$1');
 $routes->add('blog', 'Blog::index');
 $routes->add('blog/post', 'Blog::post');
+$routes->get('blog/new', 'Blog::new');
 
 $routes->group('admin', function ($routes){
     $routes->add('user', 'Admin\Users::index');

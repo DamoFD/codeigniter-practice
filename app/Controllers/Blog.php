@@ -14,9 +14,7 @@ class Blog extends BaseController
         $posts = ['Title 1', 'Title 2', 'Title 3'];
         $data['posts'] = $posts;
 
-        echo view('header', $data);
-        return view('blog');
-        echo view('footer');
+        return view('blog', $data);
     }
 
     public function post(): string
@@ -25,8 +23,16 @@ class Blog extends BaseController
             'meta_title' => 'Codeigniter 4 Post Page',
             'title' => 'This is an awesome blog',
         ];
-        echo view('header', $data);
-        return view('single_post');
-        echo view('footer');
+
+        return view('single_post', $data);
+    }
+
+    public function new(): string
+    {
+        $data = [
+            'meta_title' => 'New Post',
+            'title' => 'Create new post',
+        ];
+        return view('new_post', $data);
     }
 }
