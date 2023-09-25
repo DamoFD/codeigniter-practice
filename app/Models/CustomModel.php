@@ -13,6 +13,23 @@ class CustomModel
         $this->db =& $db;
     }
 
+    public function all(): array
+    {
+        //"SELECT * FROM posts"
+
+        return $this->db->table('posts')->get()->getResult();
+    }
+
+    public function where(): array
+    {
+        //"SELECT * FROM posts"
+
+        return $this->db->table('posts')
+            ->where(['post_id' => 4])
+            ->get()
+            ->getResult();
+    }
+
     public function getPosts(): array
     {
         $builder = $this->db->table('posts');

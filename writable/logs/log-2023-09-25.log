@@ -83,3 +83,51 @@ in APPPATH/Models/CustomModel.php on line 22.
  3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 03:56:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3 in /app/myapp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/app/Models/CustomModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/app/Controllers/Posts.php(21): App\Models\CustomModel->where()
+#6 /app/myapp/system/CodeIgniter.php(919): App\Controllers\Posts->where()
+#7 /app/myapp/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-25 03:56:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CustomModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Posts.php(21): App\Models\CustomModel->where()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Posts->where()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 03:57:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3 in /app/myapp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/app/Models/CustomModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/app/Controllers/Posts.php(21): App\Models\CustomModel->where()
+#6 /app/myapp/system/CodeIgniter.php(919): App\Controllers\Posts->where()
+#7 /app/myapp/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-25 03:57:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CustomModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Posts.php(21): App\Models\CustomModel->where()
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Posts->where()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

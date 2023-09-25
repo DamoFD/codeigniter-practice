@@ -16,6 +16,8 @@ $routes->post('blog/new', 'Blog::new');
 $routes->add('blog/delete/(:any)', 'Blog::delete/$1');
 $routes->get('blog/edit/(:any)', 'Blog::edit/$1');
 $routes->post('blog/edit/(:any)', 'Blog::edit/$1');
+$routes->get('posts', 'Posts::index');
+$routes->get('posts/where', 'Posts::where');
 
 $routes->group('admin', function ($routes){
     $routes->add('user', 'Admin\Users::index');
